@@ -1,11 +1,29 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Listing;
 use Illuminate\Support\Facades\Route;
 
+
+// ******All Listings**********
 Route::get('/', function () {
-    return view('welcome');
+    return view('listings', [
+        'heading' => 'Latest Listing',
+        'listings' => Listing::all()
+    ]);
 });
+
+
+Route::get('/listings/{listing}', function (Listing $listing) {
+    
+    return view('listing', [
+        'listing' => $listing
+    ]);
+
+});
+
+
+
 
 Route::get('/dashboard', function () {
     return view('dashboard');
