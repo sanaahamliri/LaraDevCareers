@@ -11,6 +11,18 @@ Route::get('/', [ListingController::class, 'index']);
 
 Route::get('/listings/create',[ListingController::class, 'create']);
 
+// store data
+Route::post('/listings',[ListingController::class, 'store']);
+
+
+
+
+
+
+
+
+
+
 Route::get('/listings/{listing}',[ListingController::class, 'show']);
 
 

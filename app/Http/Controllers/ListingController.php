@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Models\Listing;
+use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Validation\Rule as ValidationRule;
 
 class ListingController extends Controller
 {
@@ -29,7 +31,7 @@ public function create() {
 public function store(Request $request) {
     $formFields = $request->validate([
         'title' => 'required',
-        'company' => ['required', Rule::unique('listings', 'company')],
+        'company' => ['required', ValidationRule::unique('listings', 'company')],
         'location' => 'required',
         'website' => 'required',
         'email' => ['required', 'email'],
@@ -41,7 +43,7 @@ public function store(Request $request) {
         $formFields['logo'] = $request->file('logo')->store('logos', 'public');
     }
 
-    $formFields['user_id'] = auth()->id();
+    // $formFields['user_id'] = auth()->id();
 
     Listing::create($formFields);
 
