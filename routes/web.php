@@ -28,6 +28,9 @@ Route::delete('/listings/{listing}',[ListingController::class, 'destroy'])->midd
 
 
 
+// Manage listings
+Route::get('listings/manage',[ListingController::class, 'manage'])->middleware('auth');
+
 
 Route::get('/listings/{listing}',[ListingController::class, 'show'])->middleware('guest');
 
@@ -46,17 +49,3 @@ Route::get('/login',[UserController::class, 'login'])->name('login')->middleware
 
 // login users
 Route::post('users/authenticate',[UserController::class, 'authenticate']);
-
-
-
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
-
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
-
-// require __DIR__.'/auth.php';

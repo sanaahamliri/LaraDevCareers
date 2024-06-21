@@ -77,6 +77,8 @@ public function update(Request $request, Listing $listing) {
         $formFields['logo'] = $request->file('logo')->store('logos', 'public');
     }
 
+    $formFields['user_id'] = auth()->id();
+
     $listing->update($formFields);
 
     return back()->with('message', 'Listing updated successfully!');
