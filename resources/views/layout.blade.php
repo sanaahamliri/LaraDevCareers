@@ -37,8 +37,11 @@
                     Manage Listings</a>
             </li>
             <li>
-                <form class="inline" action="">
-
+                <form class="inline" method="Post" action="/logout">
+                    @csrf
+                    <button type="submit">
+                        <i class="fa-solid fa-door-closed"></i>Logout
+                    </button>
                 </form>
             </li>
             @else

@@ -38,6 +38,11 @@ Route::get('/register',[UserController::class, 'create']);
 Route::post('/users',[UserController::class, 'store']);
 
 
+// log out users
+Route::post('/logout',[UserController::class, 'logout']);
+
+
+
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth', 'verified'])->name('dashboard');
