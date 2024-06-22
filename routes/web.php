@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ListingController;
+use App\Http\Controllers\MainController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\UserController;
 use App\Models\Listing;
@@ -49,3 +50,7 @@ Route::get('/login',[UserController::class, 'login'])->name('login')->middleware
 
 // login users
 Route::post('users/authenticate',[UserController::class, 'authenticate']);
+
+
+Route::get('/scraping',[MainController::class, 'scrapeAdvertisements']);
+
