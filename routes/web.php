@@ -10,42 +10,42 @@ use Illuminate\Support\Facades\Route;
 // ******All Listings**********
 Route::get('/', [ListingController::class, 'index']);
 
-Route::get('/listings/create',[ListingController::class, 'create']);
+Route::get('/listings/create',[ListingController::class, 'create'])->middleware('auth');
 
 // store data
-Route::post('/listings',[ListingController::class, 'store']);
+Route::post('/listings',[ListingController::class, 'store'])->middleware('auth');
 
 // edit form
-Route::get('/listings/{listing}/edit',[ListingController::class, 'edit']);
+Route::get('/listings/{listing}/edit',[ListingController::class, 'edit'])->middleware('auth');
 
 
 // edit submit to update
 
-Route::put('/listings/{listing}',[ListingController::class, 'update']);
+Route::put('/listings/{listing}',[ListingController::class, 'update'])->middleware('auth');
 
 // delete listing
-Route::delete('/listings/{listing}',[ListingController::class, 'destroy']);
+Route::delete('/listings/{listing}',[ListingController::class, 'destroy'])->middleware('auth');
 
 
 
+// Manage listings
+Route::get('listings/manage',[ListingController::class, 'manage'])->middleware('auth');
 
-Route::get('/listings/{listing}',[ListingController::class, 'show']);
+
+Route::get('/listings/{listing}',[ListingController::class, 'show'])->middleware('guest');
 
 
-Route::get('/register',[UserController::class, 'create']);
+Route::get('/register',[UserController::class, 'create'])->middleware('guest');
 
 // create new user
 Route::post('/users',[UserController::class, 'store']);
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+// log out users
+Route::post('/logout',[UserController::class, 'logout'])->middleware('auth');
 
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
+// show login form
+Route::get('/login',[UserController::class, 'login'])->name('login')->middleware('guest');
 
-// require __DIR__.'/auth.php';
+// login users
+Route::post('users/authenticate',[UserController::class, 'authenticate']);

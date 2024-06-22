@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Listing;
+use App\Models\User;
 use Illuminate\Contracts\Validation\Rule;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -43,7 +44,7 @@ public function store(Request $request) {
         $formFields['logo'] = $request->file('logo')->store('logos', 'public');
     }
 
-    // $formFields['user_id'] = auth()->id();
+    $formFields['user_id'] = auth()->id();
 
     Listing::create($formFields);
 
@@ -76,6 +77,8 @@ public function update(Request $request, Listing $listing) {
         $formFields['logo'] = $request->file('logo')->store('logos', 'public');
     }
 
+    $formFields['user_id'] = auth()->id();
+
     $listing->update($formFields);
 
     return back()->with('message', 'Listing updated successfully!');
@@ -102,5 +105,3 @@ public function manage() {
 
 
 }
-
-
