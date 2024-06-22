@@ -41,14 +41,11 @@ Route::get('/register',[UserController::class, 'create'])->middleware('guest');
 Route::post('/users',[UserController::class, 'store']);
 
 
-// Route::get('/dashboard', function () {
-//     return view('dashboard');
-// })->middleware(['auth', 'verified'])->name('dashboard');
+// log out users
+Route::post('/logout',[UserController::class, 'logout'])->middleware('auth');
 
-// Route::middleware('auth')->group(function () {
-//     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
-//     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
-//     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
-// });
+// show login form
+Route::get('/login',[UserController::class, 'login'])->name('login')->middleware('guest');
 
-// require __DIR__.'/auth.php';
+// login users
+Route::post('users/authenticate',[UserController::class, 'authenticate']);
