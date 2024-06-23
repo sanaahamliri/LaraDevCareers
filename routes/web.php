@@ -52,5 +52,5 @@ Route::get('/login',[UserController::class, 'login'])->name('login')->middleware
 Route::post('users/authenticate',[UserController::class, 'authenticate']);
 
 
-Route::get('/scraping',[MainController::class, 'scrapeAdvertisements']);
+Route::get('/scraping',[MainController::class, 'scrapeAds']);
 
