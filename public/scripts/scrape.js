@@ -14,8 +14,8 @@ import puppeteer from 'puppeteer';
             let ads = [];
             adElements.forEach(ad => {
                 const imageUrl = ad.querySelector('.fotocontainer img')?.src || 'No Image';
-                const title = ad.querySelector('#b17-l1-86_1-b1-HuisTitel span')?.innerText || 'No Title';
-                const price = ad.querySelector('#b17-l1-86_1-b1-Prijs span')?.innerText || 'No Price';
+                const title = ad.querySelector('.break-word.font-size-h5')?.innerText || 'No Title';
+                const price = ad.querySelector('.font-semi-bold')?.innerText || 'No Price';
                 ads.push({ imageUrl, title, price });
             });
             return ads;

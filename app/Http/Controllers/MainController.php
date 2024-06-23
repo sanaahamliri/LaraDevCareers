@@ -24,6 +24,7 @@ class MainController extends Controller
 
         // Afficher les résultats pour déboguer
 
+
         // Vous pouvez également retourner une vue avec les annonces
         // return view('ads', ['ads' => $ads]);
     }
