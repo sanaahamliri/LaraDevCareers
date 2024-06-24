@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ads;
 use Illuminate\Http\Request;
+use App\Models\Property;
 
 class MainController extends Controller
 {
@@ -19,13 +21,22 @@ class MainController extends Controller
             echo $line . "<br>";
         }
 
+
         // Décoder la sortie JSON en un tableau PHP
-        $ads = json_decode(implode("\n", $output), true);
+        $json_output = implode("", $output);
+        $json_output = str_replace('Page loaded', '', $json_output);
+        $ads = json_decode($json_output, true);
 
-        // Afficher les résultats pour déboguer
 
+        // Insérer les annonces dans la base de données
+        foreach ($ads as $item) {
+            ads::create([
+                'imageUrl' => $item['imageUrl'],
+                'title' => $item['title'],
+                'price' => $item['price']
+            ]);
+        }
 
-        // Vous pouvez également retourner une vue avec les annonces
-        // return view('ads', ['ads' => $ads]);
+        return response()->json(['message' => 'Properties inserted successfully']);
     }
 }
