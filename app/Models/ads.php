@@ -8,5 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class ads extends Model
 {
     use HasFactory;
-    protected $fillable = ['imageUrl' , 'title', 'price'];
+    protected $fillable = [
+        'title',
+        'imageUrl',
+        'price',
+        'location',
+        'rooms',
+        'size',
+        'type',
+        'endDate',
+        'detailUrl',
+    ];
 }

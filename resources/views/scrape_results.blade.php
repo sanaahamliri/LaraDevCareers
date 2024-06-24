@@ -12,7 +12,7 @@
             @foreach($ads as $ad)
                 <li>
                     <img src="{{ $ad['imageUrl'] }}" alt="Image" width="100">
-                    <h2>{{ $ad['title'] }}</h2>
+                    <h2><a href="{{ route('ads.show', $ad->id) }}">{{ $ad['title'] }}</a></h2>
                     <p>{{ $ad['price'] }}</p>
                 </li>
             @endforeach

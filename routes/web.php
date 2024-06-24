@@ -54,3 +54,4 @@ Route::post('users/authenticate',[UserController::class, 'authenticate']);
 
 Route::get('/scraping',[MainController::class, 'scrapeAds']);
 
+Route::get('/ads/{id}', [MainController::class, 'showAd'])->name('ads.show');
