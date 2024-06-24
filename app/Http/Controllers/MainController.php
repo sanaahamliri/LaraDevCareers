@@ -51,6 +51,6 @@ class MainController extends Controller
             return redirect()->back()->with('error', 'Ad not found');
         }
 
-        return view('ad_details', ['ad' => $ad]);
+        return view('Ads.ad_details', ['ad' => $ad]);
     }
 }
