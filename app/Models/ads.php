@@ -17,6 +17,6 @@ class ads extends Model
         'size',
         'type',
         'endDate',
-        'detailUrl',
+        'description',
     ];
 }

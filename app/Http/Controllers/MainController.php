@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Ad;
-use App\Models\ads;
+use App\Models\Ads;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -26,17 +26,28 @@ class MainController extends Controller
         $json_output = str_replace('Page loaded', '', $json_output);
         $ads = json_decode($json_output, true);
 
+        // Check if json_decode failed
+        if (json_last_error() !== JSON_ERROR_NONE) {
+            return response()->json(['error' => 'JSON decode error: ' . json_last_error_msg()], 500);
+        }
+
+        // Check if $ads is null or not an array
+        if (!is_array($ads)) {
+            return response()->json(['error' => 'Invalid JSON data'], 500);
+        }
+
         // Insert the ads into the database
         foreach ($ads as $item) {
-            ads::create([
-                'imageUrl' => $item['imageUrl'],
-                'title' => $item['title'],
-                'price' => $item['price'],
-                'location' => $item['location'],
-                'rooms' => $item['rooms'],
-                'size' => $item['size'],
-                'type' => $item['type'],
-                'endDate' => $item['endDate'],
+            Ads::create([
+                'imageUrl' => $item['imageUrl'] ?? null,
+                'title' => $item['title'] ?? null,
+                'price' => $item['price'] ?? null,
+                'location' => $item['location'] ?? null,
+                'rooms' => $item['rooms'] ?? null,
+                'size' => $item['size'] ?? null,
+                'type' => $item['type'] ?? null,
+                'endDate' => $item['endDate'] ?? null,
+                'description' => $item['description'] ?? null, // New field for description
             ]);
         }
 

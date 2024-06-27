@@ -7,10 +7,10 @@
 
   <div class="lg:grid lg:grid-cols-2 gap-4 space-y-4 md:space-y-0 mx-4">
 
-    @unless(count($ads) == 0)
+    @unless(count($listings) == 0)
 
-    @foreach($ads as $ad)
-    <x-listing-card :ad="$ad" />
+    @foreach($listings as $listing)
+    <x-listing-card :listing="$listing" />
     @endforeach
 
     @else
@@ -19,8 +19,7 @@
 
   </div>
 
-  
   <div class="mt-6 p-4">
-    {{$ads->links()}}
+    {{$listings->links()}}
   </div>
 </x-layout>

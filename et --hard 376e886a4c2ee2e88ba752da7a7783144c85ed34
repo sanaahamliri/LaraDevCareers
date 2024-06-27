@@ -1,0 +1,180 @@
+[33mcommit 6cac05927b262e193c5e624e79da68871750aae3[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Mon Jun 24 19:54:34 2024 +0100
+
+    edit a front for data
+
+[33mcommit 376e886a4c2ee2e88ba752da7a7783144c85ed34[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Mon Jun 24 18:58:45 2024 +0100
+
+    more data
+
+[33mcommit 765c65015c76804790db45db7c36090c7c8ca738[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Mon Jun 24 09:56:29 2024 +0100
+
+    data saved in the database
+
+[33mcommit 5537386c176a0e651075d9ab98a3035dcc2c6c2a[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sun Jun 23 16:25:54 2024 +0100
+
+    data geted sucessfuly update2
+
+[33mcommit d4dfd9c8af21ce7bd74bcc0ca271ee1c24e06fde[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sun Jun 23 13:56:49 2024 +0100
+
+    data geted sucessfuly
+
+[33mcommit 50b2435c3ff95dda672b658a6f0827272f4231bc[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 21:40:19 2024 +0100
+
+    Implement web scraper for housing advertisements
+
+[33mcommit 523b2f1e7ebf4a4fd436a8e9f5bcbb5a08737ff5[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 19:00:18 2024 +0100
+
+    sunra installation
+
+[33mcommit 344520c79d6ff5f51c9b2bbbeca60a891bb6e0fb[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 18:56:02 2024 +0100
+
+    guzzle installation
+
+[33mcommit 6cb0c647e28f3e94ae4d8b3d975e786ce0b663f5[m
+Merge: aebe2e2 c775d51
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 18:40:04 2024 +0100
+
+    Merge commit 'c775d51d'
+
+[33mcommit aebe2e2553f3e2b8ad1c41304b2cf917973a957f[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 18:35:00 2024 +0100
+
+    Sauvegarde des modifications avant de changer de branche
+
+[33mcommit 28b7fdb34a45fb53406f01f6a4e728a23a1543ce[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Sat Jun 22 18:28:32 2024 +0100
+
+    back to the last commit
+
+[33mcommit c775d51d66aea4f446d2e28e63d594e760431302[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 23:25:39 2024 +0100
+
+    updates
+
+[33mcommit 7807ef810747ea9d42bc4af5db5e25d1949e881c[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 14:39:12 2024 +0100
+
+    remove breeze and fixing authentification and put middlwares
+
+[33mcommit 0a6aea26f2ce11bd1ce59da96f397b3158c5304e[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 13:47:01 2024 +0100
+
+    log out users
+
+[33mcommit 26d25f1f4cf9625cadfa10c9a1350ec9740b2bbd[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 13:42:22 2024 +0100
+
+    register&login forms done
+
+[33mcommit 283da01dc3b43bec63ec81d4ef13553bbfde0b85[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 10:44:00 2024 +0100
+
+    fixing user registration
+
+[33mcommit b74e6865ead09274d08ae88ce8e20e08030e8b65[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Fri Jun 21 10:12:58 2024 +0100
+
+    edit & delete listing done
+
+[33mcommit fc171ef2ab7058c3c905d93e1f6d15a881de9791[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 23:50:44 2024 +0100
+
+    images fixing
+
+[33mcommit b49a062745cbd03bd1ffbfab58ee67179de327d1[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 23:30:44 2024 +0100
+
+    pagination done
+
+[33mcommit 8f56751f8d7ccdb0a7f039551d3487638a8c6d89[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 23:15:38 2024 +0100
+
+    add post done
+
+[33mcommit cdbf2aa893853baba638399c9ee26578dea7a598[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 21:38:33 2024 +0100
+
+    fixing layout error
+
+[33mcommit c7b40c54529c2c77aec00f89d011a9514e4beb37[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 21:14:06 2024 +0100
+
+    search fonctinality done
+
+[33mcommit 83429f4978945011f364cfbfce6a4fb440643dca[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 20:58:35 2024 +0100
+
+    filter by tag done
+
+[33mcommit 008b9711c78499695d0496b0dac33692b1e82cdf[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 20:04:28 2024 +0100
+
+    fixing routes and controller create& making listings folder
+
+[33mcommit f64ba5f85ee7fe18c1db900cea9b4fe781e1f9ea[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 19:24:47 2024 +0100
+
+    components and passing props
+
+[33mcommit a51f11fe1af78dc6b664d277e3bd368dd04bbbce[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 19:07:08 2024 +0100
+
+    front done
+
+[33mcommit 2cd66f346ef65e6200775978336b78ad7da76e2a[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 15:47:11 2024 +0100
+
+    listings factory
+
+[33mcommit 0cedbb4ea1fa3e1e96666b3f411fa32de0ec13f7[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 15:12:22 2024 +0100
+
+    seed users data
+
+[33mcommit 12a50f35892561e2d84416e9f5ca0cb007456d77[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 14:52:36 2024 +0100
+
+    authentification with breeze
+
+[33mcommit 37d0ad3ae63ecdd42e23e8431d5675815c903457[m
+Author: sanaahamliri <sanahamlirifr01@gmail.com>
+Date:   Thu Jun 20 11:32:58 2024 +0100
+
+    initial commit

@@ -18,7 +18,7 @@ class CreateAdsTable extends Migration
             $table->string('size')->nullable();
             $table->string('type')->nullable();
             $table->string('endDate')->nullable();
-            $table->string('detailUrl')->nullable();
+            $table->string('description')->nullable();
             $table->timestamps();
         });
     }
